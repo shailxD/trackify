@@ -1,7 +1,51 @@
-# shadcn instructions
+# Shadcn Instructions
 
-Use the latest version of Shadcn to install new components, like this command to add a button component:
+You are working inside a project that uses **Shadcn UI**.
+
+When generating UI components, always assume the latest Shadcn setup and follow this format to add new components:
+
+```bash
+pnpx shadcn@latest add <component-name>
+```
+
+Example for installing the Button component:
 
 ```bash
 pnpx shadcn@latest add button
 ```
+
+---
+
+## Commit Message Format (Use for future commits)
+
+Use conventional commit style for clarity and maintainability:
+
+| Type | When to Use |
+|------|-------------|
+| **feat:** | Add a new feature or page |
+| **fix:** | Bug fixes |
+| **ui:** | UI enhancements or styling changes |
+| **refactor:** | Code improvements without feature change |
+| **chore:** | Config, setup, dependency updates |
+| **docs:** | README or documentation changes |
+| **style:** | Formatting, naming, code style only |
+
+### Examples
+
+```bash
+feat: add expense form UI
+feat: implement localStorage CRUD for transactions
+ui: improve table layout with Shadcn components
+refactor: extract reusable form input component
+docs: update README with installation steps
+```
+
+---
+
+### Additional Guidelines
+
+- Always prefer Shadcn components for UI instead of plain HTML or other libraries.
+- All code should be written in TypeScript.
+- Prioritize accessibility, clean structure, and component reusability.
+- Use feature-specific commit messages to maintain clean history.
+- When in doubt, refer to the official Shadcn documentation for best practices.

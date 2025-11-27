@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { LayoutDashboard, ReceiptText } from "lucide-react";
+import { GalleryVerticalEnd, LayoutDashboard, ReceiptText } from "lucide-react";
 
 import { NavMain } from "@/components/layout/nav-main";
 import { NavUser } from "@/components/layout/nav-user";
@@ -9,7 +9,13 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { APP } from "@/data/app";
+import { Link } from "@tanstack/react-router";
 
 const data = [
   {
@@ -27,6 +33,23 @@ const data = [
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar variant="inset" {...props}>
+      <SidebarHeader>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton size="lg" asChild>
+              <Link
+                to="/dashboard"
+                className="flex cursor-default items-center gap-2 self-center font-medium"
+              >
+                <div className="flex size-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
+                  <GalleryVerticalEnd className="size-4" />
+                </div>
+                {APP.name}
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarHeader>
       <SidebarContent>
         <NavMain data={data} />
       </SidebarContent>

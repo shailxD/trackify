@@ -1,5 +1,4 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
-import { GalleryVerticalEnd } from "lucide-react";
 
 import { AppSidebar } from "@/components/layout/app-sidebar";
 import { Separator } from "@/components/ui/separator";
@@ -9,10 +8,10 @@ import {
   SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { APP } from "@/data/app";
 import { cn } from "@/lib/utils";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { ProtectedRoute } from "@/components/route-guards";
+import useAuthStore from "@/store/auth-store";
 
 export const Route = createFileRoute("/_app")({
   component: RouteComponent,
@@ -31,6 +30,7 @@ function RouteComponent() {
 
 function SidebarContent() {
   const { open } = useSidebar();
+  const { user } = useAuthStore();
 
   return (
     <SidebarInset>
@@ -46,11 +46,9 @@ function SidebarContent() {
             orientation="vertical"
             className="mr-2 data-[orientation=vertical]:h-4"
           />
-          <div className="flex cursor-default items-center gap-2 self-center font-medium">
-            <div className="flex size-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <GalleryVerticalEnd className="size-4" />
-            </div>
-            {APP.name}
+          <div className="flex gap-1.5">
+            <h2 className="italic">Hello,</h2>
+            <h2 className="font-semibold italic">{user?.name}</h2>
           </div>
         </div>
 
