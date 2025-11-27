@@ -160,10 +160,6 @@ export function SignupForm({
           </Form>
         </CardContent>
       </Card>
-      <div className="text-center text-xs text-balance text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
-      </div>
     </div>
   );
 }
