@@ -2,6 +2,9 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Loading } from "@/components/loading";
+import { NotFound } from "@/components/not-found";
+import { ErrorComponent } from "@/components/error-component";
 
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
@@ -17,6 +20,9 @@ const router = createRouter({
   scrollRestoration: true,
   defaultStructuralSharing: true,
   defaultPreloadStaleTime: 0,
+  defaultPendingComponent: Loading,
+  defaultNotFoundComponent: () => <NotFound />,
+  defaultErrorComponent: ErrorComponent,
 });
 
 // Register the router instance for type safety

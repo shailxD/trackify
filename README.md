@@ -113,7 +113,8 @@ Trackify uses **LocalStorage** for data persistence, meaning your expense data i
 trackify/
 ├── public/
 │   ├── manifest.json
-│   └── robots.txt
+│   ├── robots.txt
+│   └── screenshots/         # Generated screenshots
 ├── src/
 │   ├── assets/              # Images and static assets
 │   ├── components/
@@ -141,6 +142,9 @@ trackify/
 │   │   │   └── nav-user.tsx
 │   │   ├── theme-switcher/  # Theme toggle
 │   │   ├── ui/              # Shadcn UI components
+│   │   ├── error-component.tsx # Global error boundary
+│   │   ├── loading.tsx      # Global loading state
+│   │   ├── not-found.tsx    # 404 page
 │   │   ├── route-guards.tsx
 │   │   └── theme-provider.tsx
 │   ├── data/
@@ -162,6 +166,8 @@ trackify/
 │   │   └── _auth/
 │   │       ├── login.tsx
 │   │       └── signup.tsx
+│   ├── scripts/             # Automation scripts
+│   │   └── capture.mts      # Screenshot capture script
 │   ├── store/               # Zustand state management
 │   │   ├── auth-store.ts
 │   │   ├── expenses-store.ts
