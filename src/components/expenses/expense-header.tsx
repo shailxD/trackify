@@ -123,7 +123,7 @@ export function ExpenseHeader() {
               selected={dateRange}
               onSelect={setDateRange}
               numberOfMonths={1}
-              className="sm:block"
+              className="sm:hidden"
             />
             <Calendar
               mode="range"
