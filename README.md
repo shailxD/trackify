@@ -4,7 +4,7 @@ A modern, feature-rich personal expense tracking application built with React, T
 
 ## 🚀 Live Demo
 
-_Add your deployment link here when available_
+[**View Live Demo**](https://trackify-tawny.vercel.app/)
 
 ## 📥 How to Run the Project
 
@@ -36,9 +36,13 @@ The application will be available at `http://localhost:3000`
 ```bash
 pnpm build        # Build for production
 pnpm serve        # Preview production build
+pnpm preview      # Build and preview production build
 pnpm lint         # Run ESLint
+pnpm check-types  # Check TypeScript types
+pnpm format:check # Check code formatting
 pnpm format:write # Format code with Prettier
 pnpm test         # Run tests
+pnpm capture      # Capture screenshots (requires Puppeteer setup)
 ```
 
 ### Data Persistence
@@ -83,75 +87,25 @@ Trackify uses **LocalStorage** for data persistence, meaning your expense data i
 - **date-fns** - Modern date utility library
 - **React Day Picker** - Date picker component
 
-## ✨ Features
-
-### Expense Management
-
-- ✅ **Add Expenses** - Create new expense entries with title, amount, category, date, and notes
-- ✅ **Edit Expenses** - Modify existing expense details
-- ✅ **Delete Expenses** - Remove unwanted expense records with confirmation dialog
-- ✅ **Expense Table** - View all expenses in a organized, sortable table with action menus
-
-### Dashboard Analytics
-
-- ✅ **Total Spending** - See your overall expense total at a glance
-- ✅ **Category-wise Breakdown** - View spending distribution across different categories
-- ✅ **Visual Charts** - Interactive pie and bar charts for spending visualization
-- ✅ **Spending Insights** - Percentage breakdown showing how much each category contributes
-
-### Data Filtering & Search
-
-- ✅ **Category Filter** - Filter expenses by specific categories
-- ✅ **Date Range Filter** - View expenses within custom date ranges
-- ✅ **Search Functionality** - Fuzzy search across title, category, notes, and amount
-- ✅ **Real-time Updates** - All filters update instantly with debounced search
-
-### User Experience
-
-- ✅ **Persistent Storage** - All data saved automatically in LocalStorage
-- ✅ **Empty States** - Helpful messages and CTAs when no data exists
-- ✅ **Pagination** - Navigate through expenses with ease (8 items per page)
-- ✅ **Loading States** - Smooth transitions and feedback
-
-## 🔥 Bonus Features
-
-### 📊 Advanced Data Visualization
-
-- **Pie Chart** - Interactive donut chart showing category distribution with percentages
-- **Bar Chart** - Horizontal bar chart comparing spending across categories
-- **Dynamic Colors** - Consistent color coding for each expense category
-
-### 📱 Responsive Design
-
-- **Mobile-First** - Optimized for mobile devices with touch-friendly interactions
-- **Adaptive Layouts** - Tables transform into cards on mobile screens
-- **Flexible Filters** - Stacked filter controls on mobile, horizontal on desktop
-- **Calendar Adaptation** - Single month view on mobile, dual month on desktop
-
-### ✅ Form Validation
-
-- **React Hook Form** - Performant form handling with minimal re-renders
-- **Zod Schema** - Type-safe validation with helpful error messages
-- **Real-time Feedback** - Immediate validation as you type
-
-### 🎨 UI/UX Enhancements
-
-- **Theme Support** - Built-in light/dark mode switching
-- **Smooth Animations** - Polished transitions and interactions
-- **Accessible Components** - ARIA-compliant, keyboard navigable
-- **Toast Notifications** - (Ready for implementation)
-
 ## 📊 Screenshots
 
-### Dashboard View
+### Home
 
-![Dashboard](./screenshots/dashboard.png)
-_Comprehensive spending analytics with charts and category breakdowns_
+|                              Desktop                               |                              Mobile                              |
+| :----------------------------------------------------------------: | :--------------------------------------------------------------: |
+| ![Home Desktop](./public/screenshots/screenshot-home-desktop.webp) | ![Home Mobile](./public/screenshots/screenshot-home-mobile.webp) |
 
-### Expenses Management
+### Dashboard
 
-![Expenses](./screenshots/expenses.png)
-_Manage all your expenses with powerful filtering and search capabilities_
+|                                   Desktop                                    |                                   Mobile                                   |
+| :--------------------------------------------------------------------------: | :------------------------------------------------------------------------: |
+| ![Dashboard Desktop](./public/screenshots/screenshot-dashboard-desktop.webp) | ![Dashboard Mobile](./public/screenshots/screenshot-dashboard-mobile.webp) |
+
+### Expenses
+
+|                                  Desktop                                   |                                  Mobile                                  |
+| :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| ![Expenses Desktop](./public/screenshots/screenshot-expenses-desktop.webp) | ![Expenses Mobile](./public/screenshots/screenshot-expenses-mobile.webp) |
 
 ## 📁 Folder Structure
 
