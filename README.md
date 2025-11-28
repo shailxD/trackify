@@ -4,7 +4,7 @@ A modern, feature-rich personal expense tracking application built with React, T
 
 ## 🚀 Live Demo
 
-[**View Live Demo**](https://trackify-tawny.vercel.app/)
+[**View Live Demo**](https://trackify-tawny.vercel.app/) • [**Watch Demo Video**](https://www.loom.com/share/5fc5b627bfbf4df9a3b7ab2580d310e3)
 
 ## 📥 How to Run the Project
 
