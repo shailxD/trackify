@@ -89,11 +89,11 @@ Trackify uses **LocalStorage** for data persistence, meaning your expense data i
 
 ## 📊 Screenshots
 
-### Home
+### Login
 
-|                              Desktop                               |                              Mobile                              |
-| :----------------------------------------------------------------: | :--------------------------------------------------------------: |
-| ![Home Desktop](./public/screenshots/screenshot-home-desktop.webp) | ![Home Mobile](./public/screenshots/screenshot-home-mobile.webp) |
+|                               Desktop                               |                              Mobile                               |
+| :-----------------------------------------------------------------: | :---------------------------------------------------------------: |
+| ![Login Desktop](./public/screenshots/screenshot-home-desktop.webp) | ![Login Mobile](./public/screenshots/screenshot-home-mobile.webp) |
 
 ### Dashboard
 
